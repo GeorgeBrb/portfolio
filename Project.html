@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="stylesheet"href="style.css"/>
+    <link rel="stylesheet"href="style4.css"/>
+    <link rel="stylesheet"href="style1.css"/>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <section class="main">
+      
+    </section>
+  
+    <script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+  
+    
+    document.addEventListener("mousemove", (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
+  
+      cursor.style.top = y + "px";
+      cursor.style.left = x + "px";
+      cursor.style.display = "block";
+  
+      
+      function mouseStopped(){
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped, 1000);
+    });
+  
+    document.addEventListener("mouseout", () => {
+      cursor.style.display = "none";
+    });
+    </script>
+
+    --<div class="topnav">
+        <a href="http://127.0.0.1:5500/Contact.html">Contact</a> 
+        <a href="http://127.0.0.1:5500/Project.html">Project</a>
+        <a href="http://127.0.0.1:5500/About.html">About</a>
+        <a href="http://127.0.0.1:5500/Home.html">Home</a>
+    </div>-->
+    </body>
+    <div class="Project-img">
+        <div class="img1">
+        <img class="pct1"src="Img1.jpeg" alt="pic1">
+        <h4 class="Title1">Tehnical drawing of a threaded rod </h4>
+        </div>
+        <div  class="img2">
+            <img class="pct2"src="Img2.jpeg" alt="pic2"> 
+            <h4 class="Title2">Doosan Puma 240 M cnc lathe</h4>
+        </div>
+        <div  class="img3">
+            <img class="pct3"src="Img3.jpeg" alt="pic3"> 
+            <h4 class="Title3">Spindle</h4>
+        </div>
+        <div  class="img4">
+            <img class="pct4"src="Img4.jpeg" alt="pic4"> 
+            <h4 class="Title4">Threaded rod</h4>
+        </div> 
+    </div>
+
+
+
+</html>

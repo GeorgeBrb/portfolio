@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+   
+    <link rel="stylesheet"href="style.css"/>
+    <link rel="stylesheet"href="style1.css"/>
+
+    
+    
+    
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <section class="main">
+      
+    </section>
+
+    <script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+
+    
+    document.addEventListener("mousemove", (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
+
+      cursor.style.top = y + "px";
+      cursor.style.left = x + "px";
+      cursor.style.display = "block";
+
+      
+      function mouseStopped(){
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped, 1000);
+    });
+
+    document.addEventListener("mouseout", () => {
+      cursor.style.display = "none";
+    });
+    </script>
+
+
+    <div class="night">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="topnav">
+        <a href="http://127.0.0.1:5500/Contact.html">Contact</a> 
+        <a href="http://127.0.0.1:5500/Project.html">Project</a>
+        <a href="http://127.0.0.1:5500/About.html">About</a>
+        <a href="http://127.0.0.1:5500/Home.html">Home</a>
+    </div>
+
+
+        <div class="container1">
+            <h1 aria-label="Hi, I'm  George" class="blast-root">
+                <span class="blast" aria-hidden="true" style="opacity: 1;">Hi</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">,</span>
+                <br>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">I' m</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">George,</span>
+              
+            </h1>
+            <div class="container2">
+                <h2>web developer</h2>
+                <h2>web developer</h2>
+            
+             </div>
+            
+ </div> 
+ </body>
+ 
+
+</html>

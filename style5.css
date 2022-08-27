@@ -1,0 +1,85 @@
+.Box{
+
+    width: 705px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 670px;
+    display: flex;
+}
+.MidTitle{
+
+    font-family:'Playfair Display';
+    font-size: 39px;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px
+    
+}
+
+.Contact{
+    
+    width: 1000px;
+    height: 650px;
+    margin-top: 50px;
+    margin-left: 490px;
+    display: flex;
+}
+
+.Information{
+    border-top-left-radius: 70%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+
+    background:linear-gradient(#2E1A47,#541B54);
+    flex: 1;
+}
+
+.Contact-me{
+    border-radius: 5%;
+    background: linear-gradient(#E5E4E2,#C0C0C0);
+    flex: 2;
+    height: 98%;
+    align-self: center;
+    
+}
+.Information{
+    color: aliceblue;
+    font-family:'Playfair Display' ;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+
+}
+.TitleC{
+    text-align: center;
+    margin: 50px 0;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding-bottom: 70px;
+}
+.social{
+    
+    justify-self:flex-end ;
+    margin-left: 150px;
+
+}
+.detail-item h6{
+    font-size: 18px;
+    color: white;
+}
+.contact-details{
+    display: flex;
+    gap: 20px;
+}
+.social{
+    display: flex;
+    gap: 30px;
+}
+.social i{
+    color: white; 
+}

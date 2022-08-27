@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="stylesheet"href="style5.css"/>
+    <link rel="stylesheet"href="style2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+    <link rel="stylesheet"href="style.css"/>
+    <link rel="stylesheet"href="style1.css"/>
+    <link rel="stylesheet"href="style6.css"/>
+
+    
+    </head>
+<body>
+    <div class="cursor"></div>
+
+    <section class="main">
+      
+    </section>
+  
+    <script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+  
+    
+    document.addEventListener("mousemove", (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
+  
+      cursor.style.top = y + "px";
+      cursor.style.left = x + "px";
+      cursor.style.display = "block";
+  
+      
+      function mouseStopped(){
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped, 1000);
+    });
+  
+    document.addEventListener("mouseout", () => {
+      cursor.style.display = "none";
+    });
+    </script>
+
+    <div class="topnav">
+     <a href="http://127.0.0.1:5500/Contact.html">Contact</a> 
+     <a href="http://127.0.0.1:5500/Project.html">Project</a>
+     <a href="http://127.0.0.1:5500/About.html">About</a>
+     <a href="http://127.0.0.1:5500/Home.html">Home</a>
+     </div>
+      <div class="Box">
+        <div class="MidTitle">
+            <H1>Contact me</H1>
+        </div>
+      </div>
+    <div class="Contact">
+        <div class="Information">
+            <div class="TitleC"> 
+                <h2>Contact Info</h2>
+            </div>
+            <div class="contact-details">
+                <div class="detail-box">
+                    <div class="detail-item">
+                        <div><i class="fa-solid fa-user"></i> Name</div>
+                        <h6>George Barba-Rosie</h6>
+                    </div>
+                </div>
+                <div class="detail-box"><div class="detail-item">
+                    <div><i class="fa-solid fa-envelope"></i> Email</div>
+                    <h6>Georgebarbarosie2000@gmail.com</h6>
+                </div></div>
+                <div class="detail-box"><div class="detail-item">
+                    <div><i class="fa-solid fa-mobile-screen-button"></i> Phone</div>
+                    <h6>+40761252294</h6>
+                </div></div>
+                <div class="detail-box"><div class="detail-item">
+                    <div><i class="fa-solid fa-location-pin"></i> Adress</div>
+                    <h6>Cluj-Napoca,Romania</h6>
+
+                </div></div>
+            </div>
+           <div class="social">
+            <div><a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div><a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div><a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div><a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+           </div>
+        </div>
+        <div class="Contact-me">
+            <form class="form">
+                <h3>KEEP IN TOUCH</h3>
+                <div class="boxtext">
+                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
+                    <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+                    <p type="Message:"><input placeholder="What would you like to tell us.."></input></p> 
+                </div>
+                
+                <button>Send Message</button>
+         
+              </form>
+    </div>
+     
+    
+    
+</body>
+</html>
